@@ -32,4 +32,4 @@ jobs:
           echo "$GITHUB_ACTOR, how u doing?"
           echo "$GITHUB_TOKEN"
         env: 
-          NAME: Luis Romo!
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
