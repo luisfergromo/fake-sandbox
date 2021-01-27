@@ -1,0 +1,11 @@
+# madlib.yml
+on: issues
+name: Create a MadLibs in GitHub Issues
+jobs:
+  madlib:
+    runs-on:ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: luisfergromo/variables-in-markdown@v0.1.4
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
