@@ -29,6 +29,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Saying Hello from workflows 
         run: |
-          echo Hello $GITHUB_ACTOR, how u doing?
+          echo "$GITHUB_ACTOR, how u doing?"
+          echo "$GITHUB_TOKEN"
         env: 
-          NAME: Luis
+          NAME: Luis Romo!
