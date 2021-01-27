@@ -3,6 +3,7 @@ on: issues
 name: Create a MadLibs in GitHub Issues
 jobs:
   madlib:
+    name: markdown-marker
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
